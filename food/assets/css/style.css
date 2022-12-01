@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  --primary: #c9c1ac;
+  --secondary: #d3325f;
+  --sidebar: #e7e2dd;
+  --btn: #dc3545;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+header {
+  background: var(--primary);
+  padding: 10px 0;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 80px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1.225rem;
+  color: var(--secondary);
+  font-weight: 500;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero {
+  width: 100%;
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(../img/background.jpg) no-repeat center center/cover;
+  min-height: calc(100vh - 90.97px);
+  background-attachment: fixed;
+}
+.cart {
+  width: 20px;
+  filter: invert(25%) sepia(98%) saturate(1902%) hue-rotate(324deg)
+    brightness(87%) contrast(87%);
+  cursor: pointer;
+}
+.gap {
+  gap: 2rem;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 0 20em;
+  border: 3px solid #fff;
+}
+.card .body {
+  padding: 10px 20px;
+  background: #fff;
+  text-align: center;
+}
+.card .body p {
+  display: inline-block;
+}
+.card h4 {
+  color: var(--secondary);
+  margin-bottom: 15px;
+  font-size: 1.325rem;
+}
+.card .btn {
+  display: inline-block;
+  padding: 5px 15px;
+  background: var(--secondary);
+  color: #fff;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.card .img img {
+  width: 100%;
+}
+.mt-40 {
+  padding: 50px 0;
+}
+.sidebar {
+  position: fixed;
+  min-height: 100vh;
+  right: -110%;
+  width: 400px;
+  background: var(--sidebar);
+  top: 0;
+  transition: 0.5s ease-in-out;
+  bottom: 0;
+}
+.sidebar.active {
+  right: 0;
+}
+
+.cart-div sup {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  display: inline-block;
+  background: #fff;
+  /* border-radius: 50%; */
+  padding: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.sidebar .content {
+  padding: 30px;
+}
+.close {
+  background: #000;
+  color: #fff;
+  padding: 0px 5px;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.close-cart {
+  background: #000;
+  color: #fff;
+  width: 20px;
+  height: 20px;  
+  display: inline-block;
+  font-size: 1.225rem;
+  line-height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.content h5 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.325rem;
+  margin: 40px 0;
+}
+.center {
+  text-align: center;
+}
+.checkout {
+  text-align: center;
+  display: block;
+  background: var(--btn);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.content .close-item {
+  color: var(--btn);
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.content input {
+  width: 50px;
+  padding: 5px;
+  outline: none;
+  border: 0;
+}
+table {
+  width: 100%;
+}
+table td {
+  text-align: center;
+  padding: 5px;
+}
+table td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* table tr td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+} */
+table td p {
+  width: 40%;
+}
+.cart-div {
+  position: relative;
+}
+
+@media (max-width: 747px) {
+  .menu{
+    display: none;
+  }
+}
